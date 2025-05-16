@@ -68,11 +68,12 @@ const PremiumProducts = () => {
   };
 
   const handleReadMore = (title: string) => {
-    router.push('/');
-  };
-
-  const handle = (title: any) => {
-    console.log(title);
+    router.push({
+      pathname: '/highQualityProduct',
+      params: {
+        title: title,
+      },
+    });
   };
 
   return (
@@ -101,25 +102,19 @@ const PremiumProducts = () => {
         scrollEventThrottle={16}
       >
         {data.map((item) => (
-          <Card style={styles.card} key={item.id}>
+          <Card
+            onPress={() => handleReadMore(item.title)}
+            style={styles.card}
+            key={item.id}
+          >
             <Card.Cover
               source={{
                 uri: `${item.image}`,
               }}
             />
             <Card.Content>
-              <Title style={styles.title}>{item.title}</Title>
+              <Text style={styles.title}>{item.title}</Text>
             </Card.Content>
-            <Card.Actions>
-              <Button
-                textColor='rgba(171, 127, 233, 0.89)'
-                onPress={() => handleReadMore(item.title)}
-                mode='outlined'
-                style={{ marginRight: 100 }}
-              >
-                <Text>Read More</Text>
-              </Button>
-            </Card.Actions>
           </Card>
         ))}
       </ScrollView>
@@ -147,12 +142,10 @@ const styles = StyleSheet.create({
   },
   imageContainer: {
     width: screenWidth / 2,
-    padding: 10,
     resizeMode: 'cover',
   },
   card: {
     width: 250,
-    height: 300,
     borderRadius: 10,
     overflow: 'hidden',
     backgroundColor: '#fff',
@@ -167,11 +160,6 @@ const styles = StyleSheet.create({
     marginTop: 8,
     fontSize: 15,
     fontWeight: 'bold',
-  },
-  image: {
-    width: '100%',
-    height: 200,
-    borderRadius: 30,
   },
   arrowLeft: {
     position: 'absolute',

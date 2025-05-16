@@ -59,10 +59,9 @@ const AccordionDetails = () => {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 10,
-    margin: 10,
+    padding: 8,
+    margin: 8,
     backgroundColor: '#E8F1FF',
-    marginBottom: 10,
   },
   heading: {
     fontWeight: 500,

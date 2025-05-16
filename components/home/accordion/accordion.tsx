@@ -52,17 +52,16 @@ const AccordionComponent = () => {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 10,
-    margin: 10,
+    padding: 8,
+    margin: 8,
     backgroundColor: '#E8F1FF',
-    marginBottom: 10,
   },
   accordion: {
     backgroundColor: '#E8F1FF',
   },
   title: {
     fontWeight: '700',
-    fontSize: 15,
+    fontSize: 16,
     color: '#00368B',
   },
   icon: {

@@ -84,4 +84,75 @@ export const BlogsData = [
     content:
       ' Does Zinc Help in Hair Growth?   If you are experiencing thinning or excessive shedding of hairs, then there is probability that you might be having […]',
   },
+  {
+    id: 13,
+    img: 'https://www.hcareindia.com/wp-content/uploads/2024/09/BEST-MULTIVITAMINS-FOR-WOMEN.jpg',
+    title: 'Best Multivitamins for Women',
+    content:
+      'Best Multivitamins for Women   As women goes through various physiological changes throughout life, such as menstruation, pregnancy and menopause. These changes result in increased requirements […]',
+  },
+  {
+    id: 14,
+    img: 'https://www.hcareindia.com/wp-content/uploads/2024/09/Google-Maps-Boosts-Pharma-Business.webp',
+    title:
+      'How Search Maps Feature in Google Maps Boosts Pharma Business Growth',
+    content:
+      'Search Maps Feature in Google Maps Boosts Pharma Business Growth All the traditional business models has revolutionized with the advent of digitalization, and this transition has […]',
+  },
+  {
+    id: 15,
+    img: 'Search Maps Feature in Google Maps Boosts Pharma Business Growth All the traditional business models has revolutionized with the advent of digitalization, and this transition has […]',
+    title: 'Complete 7-Day Indian Diet Plan to Control Cholesterol',
+    content:
+      'Complete Indian Diet Plan to Control Cholesterol   Here’s a simple 7-day diet plan to control cholesterol. This meal plan is based on fact that certain […]',
+  },
+  {
+    id: 16,
+    img: 'https://www.hcareindia.com/wp-content/uploads/2024/09/childhood-allergies-3.webp',
+    title: 'Tips to Protect Your Child From Common Childhood Allergies',
+    content:
+      'Managing Common Childhood Allergies (Food, Seasonal, Skin & Respiratory Allergies) Is your child experiencing sneezing, a runny nose and itchy eyes? They might be suffering from […]',
+  },
+  {
+    id: 17,
+    img: 'https://www.hcareindia.com/wp-content/uploads/2024/09/PCD-Pharma-Company-in-Goa.webp',
+    title: 'Top 5 PCD Pharma Companies in Goa',
+    content:
+      'Best 5 PCD Pharma Companies in Goa   Here, we’ll have the top 5 PCD Pharma companies in Goa that are making a significant impact in […]',
+  },
+  {
+    id: 18,
+    img: 'https://www.hcareindia.com/wp-content/uploads/2024/09/UTI-Prevention.webp',
+    title: 'Top Do’s and Don’ts for UTI Prevention with Urone Sachets',
+    content:
+      'Treat UTIs: Try Urone Sachets!   Many women experience urinary tract infections at some point in their lives. UTIs symptoms can range from a frequent urge […]',
+  },
+  {
+    id: 19,
+    img: 'https://www.hcareindia.com/wp-content/uploads/2024/09/natural-weight-loss-supplement-3.webp',
+    title: 'How to lose weight naturally with natural weight loss supplement',
+    content:
+      'Natural Weight Loss Supplement: X-Slim Capsules When it comes the question of how to lose weight naturally, many people are eager to find natural and effective […]',
+  },
+  {
+    id: 20,
+    img: 'https://www.hcareindia.com/wp-content/uploads/2024/09/Managing-Type-2-Diabetes.webp',
+    title: 'Managing Type 2 Diabetes if Medicines Aren’t Working',
+    content:
+      'Diabetes Medicines Aren’t Working? 6 Ways to Try Don’t lose heart if your treatment of Type 2 diabetes isn’t working as expected initially. It’s not a […]',
+  },
+  {
+    id: 21,
+    img: 'https://www.hcareindia.com/wp-content/uploads/2024/09/Derma-Pharma-Company-960x750.png',
+    title: 'Top 10 Derma Companies in India',
+    content:
+      'Top 10 Derma Companies in India | Top Dermatology Companies in India   Indian market with so many derma companies, makes it difficult to find the […]',
+  },
+  {
+    id: 22,
+    img: '',
+    title: 'Types of Pharma Franchises That You Can Pursue and Why?',
+    content:
+      'It’s no secret that the different types of pharma franchises are booming. It is one of the world’s largest industries employing globally in a variety of […]',
+  },
 ];

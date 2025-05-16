@@ -60,10 +60,10 @@ const ListWithoutPaper = () => {
         style={styles.logo}
         onError={() => console.log('Error loading image')}
       />
-      <TouchableOpacity onPress={() => alert(`Clicked on ${item.name}`)}>
+      <TouchableOpacity onPress={() => alert(`Download  ${item.name}`)}>
         <Button
           mode='outlined'
-          onPress={() => alert(`Clicked on ${item.name}`)}
+          onPress={() => alert(`Download ${item.name}`)}
           style={styles.buttonText}
         >
           <Text style={{ color: '#00368B', fontWeight: 'bold' }}>Download</Text>
@@ -73,23 +73,13 @@ const ListWithoutPaper = () => {
   );
 
   return (
-    <View style={styles.container}>
-      <Text
-        style={{
-          fontSize: 25,
-          fontWeight: 700,
-          color: '#00368B',
-          marginLeft: 12,
-        }}
-      >
-        Our Divisions
-      </Text>
-      <FlatList
-        data={DATA}
-        keyExtractor={(item) => item.id}
-        renderItem={renderItem}
-      />
-    </View>
+    <FlatList
+      data={DATA}
+      keyExtractor={(item) => item.id}
+      renderItem={renderItem}
+      contentContainerStyle={styles.container}
+      ListHeaderComponent={<Text style={styles.headerText}>Our Divisions</Text>}
+    />
   );
 };
 
@@ -98,6 +88,12 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 10,
     backgroundColor: '#f5f5f5',
+  },
+  headerText: {
+    fontSize: 25,
+    fontWeight: '700',
+    color: '#00368B',
+    marginBottom: 12,
   },
   listItem: {
     flexDirection: 'row',

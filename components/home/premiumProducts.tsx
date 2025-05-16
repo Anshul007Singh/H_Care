@@ -81,8 +81,8 @@ const PremiumProducts = () => {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 15,
-    marginBottom: 20,
+    padding: 10,
+    marginBottom: 10,
   },
   imageContainer: {
     width: screenWidth / 2,

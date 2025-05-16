@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ScrollView, View, Image, StyleSheet, Pressable } from 'react-native';
+import { ScrollView, Image, StyleSheet, Pressable } from 'react-native';
 import {
   Text,
   Card,
@@ -20,8 +20,14 @@ const BlogScreen = () => {
 
   const hideDialog = () => setVisible(false);
 
-  const handleReadMore = (title: any) => {
-    router.push('/about');
+  const handleReadMore = (blog: any) => {
+    router.push({
+      pathname: '/blogDetails',
+      params: {
+        title: blog.title,
+        img: blog.img,
+      },
+    });
   };
 
   return (
@@ -36,14 +42,14 @@ const BlogScreen = () => {
                   showDialog();
                 }}
               >
-                <Image source={{ uri: blog.img }} style={styles.image} />
+                <Image src={blog.img} style={styles.image} />
               </Pressable>
             )}
             <Title style={styles.title}>{blog.title}</Title>
             <Paragraph>{blog.content}</Paragraph>
             <Button
               mode='text'
-              onPress={() => handleReadMore(blog.title)}
+              onPress={() => handleReadMore(blog)}
               style={styles.readMoreButton}
             >
               Read More...

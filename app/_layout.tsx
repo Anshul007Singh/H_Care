@@ -115,6 +115,48 @@ export default function RootLayout() {
                 ),
               }}
             />
+            <Drawer.Screen
+              name='productDetail'
+              options={{
+                title: 'PCD Products',
+                headerLeft: () => (
+                  <TouchableOpacity
+                    onPress={() => router.back()}
+                    style={{ marginLeft: 15, paddingRight: 100 }}
+                  >
+                    <Ionicons name='arrow-back' size={24} color='black' />
+                  </TouchableOpacity>
+                ),
+              }}
+            />
+            <Drawer.Screen
+              name='highQualityProduct'
+              options={{
+                title: 'PCD Products',
+                headerLeft: () => (
+                  <TouchableOpacity
+                    onPress={() => router.back()}
+                    style={{ marginLeft: 15, paddingRight: 100 }}
+                  >
+                    <Ionicons name='arrow-back' size={24} color='black' />
+                  </TouchableOpacity>
+                ),
+              }}
+            />
+            <Drawer.Screen
+              name='blogDetails'
+              options={{
+                title: 'Blog Details',
+                headerLeft: () => (
+                  <TouchableOpacity
+                    onPress={() => router.back()}
+                    style={{ marginLeft: 15, paddingRight: 100 }}
+                  >
+                    <Ionicons name='arrow-back' size={24} color='black' />
+                  </TouchableOpacity>
+                ),
+              }}
+            />
           </Drawer>
         </ThemeProvider>
       </PaperProvider>

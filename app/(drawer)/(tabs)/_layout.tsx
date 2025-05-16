@@ -1,7 +1,11 @@
 import FontAwesome from '@expo/vector-icons/FontAwesome';
-import { Tabs } from 'expo-router';
+import { router, Tabs, useNavigation } from 'expo-router';
+import { TouchableOpacity } from 'react-native';
 
 export default function TabLayout() {
+  const handleProductListPress = () => {
+    router.push('/productlist');
+  };
   return (
     <Tabs
       screenOptions={{
@@ -13,7 +17,7 @@ export default function TabLayout() {
       }}
     >
       <Tabs.Screen
-        name='index'
+        name='home'
         options={{
           title: 'Home',
           headerShown: false,
@@ -33,13 +37,20 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name='productlist'
+        name='[productlist]'
         options={{
           title: 'Product List',
           headerShown: false,
           tabBarIcon: ({ color, size }) => (
-            <FontAwesome name='list' size={size} color={color} />
+            <TouchableOpacity onPress={handleProductListPress}>
+              <FontAwesome name='list' size={size} color={color} />
+            </TouchableOpacity>
           ),
+          // tabBarButton: () => (
+          //   <TouchableOpacity onPress={handleProductListPress}>
+          //     {/* <FontAwesome name='list' size={24} color='#fff' /> */}
+          //   </TouchableOpacity>
+          // ),
         }}
       />
     </Tabs>
